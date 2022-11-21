@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainmenu
+        {
+            display:inline-block;
+        }
+        .menuitems1
+        {
+            padding: 10px 10px;
+            float: left;
+            list-style: none;
+        }
+       .menuitems1:hover 
+        {
+            background-color: black;
+            height: 12px;
+            color: whitesmoke;
+            display: inline-block;
+        }
+        .submenu2
+        {
+            padding: 0px;
+            margin-top: 10px;
+        }
+        .smenuitems1
+        {
+            margin-top: 10px;
+            padding: 0px;
+            color: black;
+            list-style: none;
+            visibility: hidden;
+        }
+        .menuitems1:hover .submenu2 .smenuitems1
+        {
+            visibility: visible;
+        }
+        .submenu3
+        {
+            padding: 0%;
+            margin-top: 10px;
+        }
+        .smenuitems2
+        {
+            margin-top: 10px;
+            padding: 0%;
+            color: black;
+            list-style: none;
+            visibility: hidden;
+        }
+        .menuitems1:hover .submenu3 .smenuitems2
+        {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="mainmenu">
+            <li class="menuitems1"> Home </li>
+            <li class="menuitems1"> Link 
+               <ul class="submenu2">
+                    <li class="smenuitems1"> <a href="https://www.google.com/"> Google </a> </li>
+                    <li class="smenuitems1"> <a href="https://in.search.yahoo.com/?fr2=inr"> Yahoo </a> </li>
+                    <li class="smenuitems1"> <a href="https://bingosnacks.com/"> Bingo </a> </li>
+                    <li class="smenuitems1"> <a href="https://github.com/"> Github </a> </li>
+                </ul>
+            </li>
+            <li class="menuitems1"> Servise 
+                <ul class="submenu3">
+                    <li class="smenuitems2"> <a href="https://www.redbus.in/?gclid=EAIaIQobChMIwIipuoy_-wIVSCUrCh3q_ggrEAAYASAAEgJZrfD_BwE"> BUS </a> </li>
+                    <li class="smenuitems2"> <a href="https://www.railyatri.in/train-ticket"> Railway </a> </li>
+                    <li class="smenuitems2"> <a href="https://www.goibibo.com/flights/?utm_source=google&utm_medium=cpc&utm_campaign=DF-Generic-EM&utm_content=Tickets-Exact&utm_term=%21SEM%21DF%21G%21Generic%21RSA%2112554947352%21121063961722%21604782801075%21e%21air+ticket+booking%21c%21&gclid=EAIaIQobChMIy6eg9Yy_-wIVb5JmAh2ZXwIAEAAYBCAAEgIngvD_BwE"> Air </a> </li>
+                </ul>
+            </li>
+            <li class="menuitems1">About Us</li>
+        </ul>
+</div>
+</body>
+</html>
